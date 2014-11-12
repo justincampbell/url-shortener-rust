@@ -1,0 +1,5 @@
+[package]
+
+name = "shortener"
+version = "0.0.1"
+authors = ["Justin Campbell <justin@justincampbell.me>"]
