@@ -4,13 +4,13 @@ type Token = String;
 type Url = String;
 
 pub struct World {
-    id: int,
+    id: i32,
     urls: HashMap<Token, Url>
 }
 
 impl World {
     pub fn empty() -> World {
-        World { urls: HashMap::new(), id: 0i }
+        World { urls: HashMap::new(), id: 0 }
     }
 
     pub fn shorten(&mut self, url: &Url) -> Token {
@@ -26,7 +26,7 @@ impl World {
         self.urls.get(&token)
     }
 
-    fn tokenize(id: int) -> String {
+    fn tokenize(id: i32) -> String {
         id.to_string()
     }
 }
